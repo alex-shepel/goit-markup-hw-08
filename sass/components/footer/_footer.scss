@@ -1,0 +1,26 @@
+@import "./address";
+@import "../sm-contacts";
+@import "./subscribe";
+@import "../button";
+
+.footer {
+	min-width: var(--viewport-min-width);
+	color: var(--font-inversed-color);
+	background-color: var(--bg-black-color);
+	padding: var(--padding-section) 0;
+}
+
+.footer__container {
+	display: flex;
+
+	@media screen and (max-width: 1199px) {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: calc(var(--grid-gap) * 2);
+		text-align: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		justify-content: space-between;
+	}
+}

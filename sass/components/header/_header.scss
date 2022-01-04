@@ -1,0 +1,58 @@
+@import "../logo";
+@import "./main-nav";
+@import "./main-contacts";
+@import "./mobile-menu";
+
+.header {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: var(--viewport-min-width);
+
+	@media screen and (min-width: 768px) {
+		border-bottom: 1px solid var(--border-color);
+		height: 80px;
+	}
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	@media screen and (max-width: 1199px) {
+		justify-content: space-between;
+	}
+
+	@media screen and (min-width: 1200px) {
+	}
+}
+
+.header__logo {
+	display: inline-block;
+
+	.header__button.is-open ~ & {
+		display: none;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+	}
+}
+
+.header__button {
+	cursor: pointer;
+	border: 0;
+	background-color: var(--bg-white-color);
+	fill: var(--font-bold-color);
+
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}

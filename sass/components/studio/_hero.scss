@@ -1,0 +1,79 @@
+@import "./modal";
+@import "./service-order";
+@import "./policy";
+
+.hero {
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: var(--bg-dark-gray-color);
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (max-width: 767px) {
+		max-width: 480px;
+		height: 400px;
+
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/studio/mobile/hero-bg.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/studio/mobile/hero-bg@2x.jpg");
+		}
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 768px;
+		height: 400px;
+
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/studio/tablet/hero-bg.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/studio/tablet/hero-bg@2x.jpg");
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 1600px;
+		height: 600px;
+
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/studio/desktop/hero-bg.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/studio/desktop/hero-bg@2x.jpg");
+		}
+	}
+}
+
+.hero__title {
+	display: block;
+	margin-bottom: 30px;
+
+	color: var(--font-inversed-color);
+	font-weight: 900;
+	line-height: 1.6;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 1199px) {
+		font-size: 26px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+	}
+}
+
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+}

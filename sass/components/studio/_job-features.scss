@@ -1,0 +1,7 @@
+@import "./features";
+@import "./job";
+
+.job-features {
+	padding: var(--padding-section) 0;
+	min-width: var(--viewport-min-width);
+}

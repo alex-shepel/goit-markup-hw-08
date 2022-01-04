@@ -1,0 +1,20 @@
+@import "./teammate";
+@import "../../utils/mixins";
+
+.team {
+	min-width: var(--viewport-min-width);
+	background-color: var(--bg-light-gray-color);
+	padding: var(--padding-section) 0;
+}
+
+.team__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gap);
+}
+
+.team__item {
+	@include flex-based(var(--team-cols), var(--grid-gap));
+	background-color: var(--bg-white-color);
+	box-shadow: var(--primary-shadow);
+}
